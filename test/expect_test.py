@@ -26,7 +26,7 @@ class TestExpect(object):
             r"<InstanceDouble of <class '?dobles.testing.User'?"
             r"(?: at 0x[0-9a-f]{9})?> object at .+> "
             r"with custom matcher: 'arg_matcher', but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -52,7 +52,7 @@ class TestExpect(object):
             r"<InstanceDouble of <class '?dobles.testing.User'?"
             r"(?: at 0x[0-9a-f]{9})?> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -70,7 +70,7 @@ class TestExpect(object):
             r"<InstanceDouble of <class '?dobles.testing.User'?"
             r"(?: at 0x[0-9a-f]{9})?> object at .+> "
             r"with \('bar'\), but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -88,7 +88,7 @@ class TestExpect(object):
             r"<InstanceDouble of <class '?dobles.testing.User'?"
             r"(?: at 0x[0-9a-f]{9})?> object at .+> "
             r"with \('bar', bar='barker'\), but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -149,7 +149,7 @@ class TestTwice(object):
             r"Expected 'instance_method' to be called 2 times instead of 1 time on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -168,7 +168,7 @@ class TestTwice(object):
             r"Expected 'instance_method' to be called 2 times instead of 3 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -195,7 +195,7 @@ class TestOnce(object):
             r"Expected 'instance_method' to be called 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -230,7 +230,7 @@ class TestExactly(object):
             r"Expected 'instance_method' to be called 2 times instead of 1 time on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -255,7 +255,7 @@ class TestExactly(object):
             r"Expected 'instance_method' to be called 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -282,7 +282,7 @@ class TestAtLeast(object):
             r"Expected 'instance_method' to be called at least 2 times instead of 1 time on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -340,7 +340,7 @@ class TestAtMost(object):
             r"Expected 'instance_method' to be called at most 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -366,7 +366,7 @@ class Test__call__(object):
             r"Expected '__call__' to be called 1 time instead of 0 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -394,7 +394,7 @@ class Test__enter__(object):
             r"Expected '__enter__' to be called 1 time instead of 0 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )
 
@@ -422,6 +422,6 @@ class Test__exit__(object):
             r"Expected '__exit__' to be called 1 time instead of 0 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/expect_test.py:\d+\)",
+            r" \(.*test/expect_test.py:\d+\)",
             str(e.value),
         )

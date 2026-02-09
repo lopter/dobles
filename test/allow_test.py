@@ -227,7 +227,7 @@ class TestTwice(object):
             r"Allowed 'instance_method' to be called 2 times instead of 3 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 
@@ -254,7 +254,7 @@ class TestOnce(object):
             r"Allowed 'instance_method' to be called 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 
@@ -278,7 +278,7 @@ class TestZeroTimes(object):
             r"Allowed 'instance_method' to be called 0 times instead of 1 "
             r"time on <InstanceDouble of <class 'dobles.testing.User'> "
             r"object at .+> with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 
@@ -306,7 +306,7 @@ class TestExactly(object):
             r"Allowed 'instance_method' to be called 0 times instead of 1 "
             r"time on <InstanceDouble of <class 'dobles.testing.User'> "
             r"object at .+> with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 
@@ -346,7 +346,7 @@ class TestExactly(object):
             r"Allowed 'instance_method' to be called 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 
@@ -450,7 +450,7 @@ class TestAtMost(object):
             r"Allowed 'instance_method' to be called at most 1 time instead of 2 times on "
             r"<InstanceDouble of <class 'dobles.testing.User'> object at .+> "
             r"with any args, but was not."
-            r" \(.*dobles/test/allow_test.py:\d+\)",
+            r" \(.*test/allow_test.py:\d+\)",
             str(e.value),
         )
 

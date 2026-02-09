@@ -130,4 +130,6 @@ def _verify_arguments(method, method_name, args, kwargs):
     except ValueError as e:
         raise VerifyingBuiltinDoubleArgumentError(str(e))
     except TypeError as e:
+        if not _is_python_function(method):
+            raise VerifyingBuiltinDoubleArgumentError(str(e))
         raise VerifyingDoubleArgumentError(str(e))
