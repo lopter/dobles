@@ -1,0 +1,49 @@
+{
+  "nodes": {
+    "flake-parts": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769996383,
+        "narHash": "sha256-AnYjnFWgS49RlqX7LrC4uA+sCCDBj0Ry/WOJ5XWAsa0=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "57928607ea566b5db3ad13af0e57e921e6b12381",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1770599071,
+        "narHash": "sha256-/BITjOFL2mg7GR5PzxkbvTZRDI26DTjGpfKbEEnT+YE=",
+        "ref": "nixos-unstable-lo-patches",
+        "rev": "632adcddf571484a36835b9f37fa37387d3246f2",
+        "shallow": true,
+        "type": "git",
+        "url": "file:///stash/home/kal/cu/src/nix/nixpkgs/nixos-unstable-lo-patches"
+      },
+      "original": {
+        "ref": "nixos-unstable-lo-patches",
+        "shallow": true,
+        "type": "git",
+        "url": "file:///stash/home/kal/cu/src/nix/nixpkgs/nixos-unstable-lo-patches"
+      }
+    },
+    "root": {
+      "inputs": {
+        "flake-parts": "flake-parts",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
