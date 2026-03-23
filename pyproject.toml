@@ -66,8 +66,8 @@ build-backend = "poetry.core.masonry.api"
 max-line-length = 100
 max-complexity = 10
 
-[tool.pytest]
-addopts = "--tb native --assert plain"
+[tool.pytest.ini_options]
+addopts = ["--tb", "native", "--assert", "plain"]
 
 
 [tool.poetry.plugins.pytest11]
